@@ -1,7 +1,8 @@
 import React from "react";
 import { ScoreProvider } from "./ScoreContext";
 import { RulesProvider } from "./RulesContext";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// Use HashRouter so routing works on GitHub Pages without basename
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 // Import all pages
 import Home from "./pages/Home";  // ✅ new home page
